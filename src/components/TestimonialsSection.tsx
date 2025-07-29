@@ -94,12 +94,16 @@ const TestimonialsSection = () => {
 
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-hero text-white px-8 py-3 rounded-lg font-semibold hover:shadow-legal transition-all hover:scale-105">
-              View All Success Stories
-            </button>
-            <button className="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
-              Schedule Your Consultation
-            </button>
+            <a href="#testimonials">
+              <button className="bg-gradient-hero text-white px-8 py-3 rounded-lg font-semibold hover:shadow-legal transition-all hover:scale-105">
+                View All Success Stories
+              </button>
+            </a>
+            <a href="#contact">
+              <button className="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
+                Schedule Your Consultation
+              </button>
+            </a>
           </div>
         </div>
       </div>

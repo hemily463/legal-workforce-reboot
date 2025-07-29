@@ -100,12 +100,16 @@ const SolutionSection = () => {
 
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-hero text-white px-8 py-3 rounded-lg font-semibold hover:shadow-legal transition-all hover:scale-105">
-              View Available Candidates
-            </button>
-            <button className="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
-              Schedule Free Consultation
-            </button>
+            <a href="#candidates">
+              <button className="bg-gradient-hero text-white px-8 py-3 rounded-lg font-semibold hover:shadow-legal transition-all hover:scale-105">
+                View Available Candidates
+              </button>
+            </a>
+            <a href="#contact">
+              <button className="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
+                Schedule Free Consultation
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -7,15 +7,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: "Roles", href: "/roles" },
-    { label: "Candidates", href: "/candidates" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "How It Works", href: "/how-it-works" },
-    { label: "Guarantee", href: "/guarantee" },
-    { label: "Testimonials", href: "/testimonials" },
-    { label: "FAQ", href: "/faq" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Roles", href: "#services" },
+    { label: "Candidates", href: "#candidates" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "How It Works", href: "#process" },
+    { label: "Guarantee", href: "#guarantee" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "FAQ", href: "#faq" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const Header = () => {
               <span className="text-white font-bold text-sm">LW</span>
             </div>
             <span className="font-bold text-xl text-foreground">
-              Legal Workforce Inc.
+              Legal Workforce
             </span>
           </div>
         </Link>
@@ -35,20 +35,22 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navigationItems.slice(0, 8).map((item) => (
-            <Link
+            <a
               key={item.label}
-              to={item.href}
+              href={item.href}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="cta" size="sm" className="hidden md:inline-flex">
-            Schedule Consultation
-          </Button>
+          <a href="#contact">
+            <Button variant="cta" size="sm" className="hidden md:inline-flex">
+              Schedule Consultation
+            </Button>
+          </a>
           
           {/* Mobile menu button */}
           <Button
@@ -67,19 +69,21 @@ const Header = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border/40 shadow-lg">
           <nav className="container py-4 space-y-2">
             {navigationItems.map((item) => (
-              <Link
+              <a
                 key={item.label}
-                to={item.href}
+                href={item.href}
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
             <div className="px-4 pt-2">
-              <Button variant="cta" size="sm" className="w-full">
-                Schedule Consultation
-              </Button>
+              <a href="#contact">
+                <Button variant="cta" size="sm" className="w-full">
+                  Schedule Consultation
+                </Button>
+              </a>
             </div>
           </nav>
         </div>

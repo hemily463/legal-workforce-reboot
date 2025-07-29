@@ -25,13 +25,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                View Available Candidates
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Schedule Free Consultation
-              </Button>
+              <a href="#candidates">
+                <Button variant="hero" size="lg" className="group">
+                  View Available Candidates
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+              <a href="#contact">
+                <Button variant="outline" size="lg">
+                  Schedule Free Consultation
+                </Button>
+              </a>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">

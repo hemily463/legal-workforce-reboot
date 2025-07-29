@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="h-8 w-8 bg-accent rounded-lg flex items-center justify-center">
                 <span className="text-legal-navy font-bold text-sm">LW</span>
               </div>
-              <span className="font-bold text-xl">Legal Workforce Inc.</span>
+              <span className="font-bold text-xl">Legal Workforce</span>
             </div>
             <p className="text-neutral-300 text-sm leading-relaxed">
               Connecting U.S. law firms with exceptional remote legal professionals. 

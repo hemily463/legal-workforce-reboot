@@ -15,15 +15,15 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <ProblemSection />
-        <SolutionSection />
-        <ServicesSection />
-        <ProcessSection />
-        <CandidatesSection />
-        <PricingSection />
-        <TestimonialsSection />
+        <section id="problems"><ProblemSection /></section>
+        <section id="solutions"><SolutionSection /></section>
+        <section id="services"><ServicesSection /></section>
+        <section id="process"><ProcessSection /></section>
+        <section id="candidates"><CandidatesSection /></section>
+        <section id="pricing"><PricingSection /></section>
+        <section id="testimonials"><TestimonialsSection /></section>
+        <section id="contact"><Footer /></section>
       </main>
-      <Footer />
     </div>
   );
 };

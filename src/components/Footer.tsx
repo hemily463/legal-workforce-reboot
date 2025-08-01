@@ -32,11 +32,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/roles" className="text-neutral-300 hover:text-accent transition-colors">Legal Assistants</Link></li>
-              <li><Link to="/roles" className="text-neutral-300 hover:text-accent transition-colors">Paralegals</Link></li>
-              <li><Link to="/roles" className="text-neutral-300 hover:text-accent transition-colors">Case Managers</Link></li>
-              <li><Link to="/roles" className="text-neutral-300 hover:text-accent transition-colors">Intake Specialists</Link></li>
-              <li><Link to="/roles" className="text-neutral-300 hover:text-accent transition-colors">Legal Researchers</Link></li>
+              <li><a href="#services" className="text-neutral-300 hover:text-accent transition-colors">Legal Assistants</a></li>
+              <li><a href="#services" className="text-neutral-300 hover:text-accent transition-colors">Paralegals</a></li>
+              <li><a href="#services" className="text-neutral-300 hover:text-accent transition-colors">Case Managers</a></li>
+              <li><a href="#services" className="text-neutral-300 hover:text-accent transition-colors">Intake Specialists</a></li>
+              <li><a href="#services" className="text-neutral-300 hover:text-accent transition-colors">Legal Researchers</a></li>
             </ul>
           </div>
 
@@ -44,11 +44,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/about" className="text-neutral-300 hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link to="/how-it-works" className="text-neutral-300 hover:text-accent transition-colors">How It Works</Link></li>
-              <li><Link to="/guarantee" className="text-neutral-300 hover:text-accent transition-colors">Our Guarantee</Link></li>
-              <li><Link to="/testimonials" className="text-neutral-300 hover:text-accent transition-colors">Client Success Stories</Link></li>
-              <li><Link to="/faq" className="text-neutral-300 hover:text-accent transition-colors">FAQ</Link></li>
+              <li><a href="#solutions" className="text-neutral-300 hover:text-accent transition-colors">About Us</a></li>
+              <li><a href="#process" className="text-neutral-300 hover:text-accent transition-colors">How It Works</a></li>
+              <li><a href="#candidates" className="text-neutral-300 hover:text-accent transition-colors">Our Guarantee</a></li>
+              <li><a href="#testimonials" className="text-neutral-300 hover:text-accent transition-colors">Client Success Stories</a></li>
+              <li><a href="#pricing" className="text-neutral-300 hover:text-accent transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -81,8 +81,8 @@ const Footer = () => {
         <div className="border-t border-neutral-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-400">
           <p>&copy; 2024 Legal Workforce Inc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <a href="#contact" className="hover:text-accent transition-colors">Privacy Policy</a>
+            <a href="#contact" className="hover:text-accent transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

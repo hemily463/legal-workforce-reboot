@@ -19,4 +19,14 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  publicDir: 'public',
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        legal: 'legal.html',
+        notlegal: 'notlegal.html',
+      },
+    },
+  },
 }));

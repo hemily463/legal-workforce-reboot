@@ -19,13 +19,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-        legal: path.resolve(__dirname, 'public/legal.html'),
-        notlegal: path.resolve(__dirname, 'public/notlegal.html'),
-      },
-    },
-  },
 }));

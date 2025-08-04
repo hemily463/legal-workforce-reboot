@@ -26,6 +26,8 @@ export default defineConfig(({ mode }) => ({
         main: 'index.html',
         legal: 'legal.html',
         notlegal: 'notlegal.html',
+        red: 'red/index.html',
+        blue: 'blue/index.html',
       },
     },
   },

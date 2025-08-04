@@ -2,12 +2,11 @@
 Options -MultiViews
 RewriteEngine On
 
-# Handle specific HTML files first
-RewriteRule ^legal\.html$ /legal.html [L]
-RewriteRule ^notlegal\.html$ /notlegal.html [L]
+# Serve static HTML files directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(legal|notlegal)\.html$ - [L]
 
-# For all other requests (except existing files), redirect to index.html for React routing
+# For all other requests, redirect to index.html for React routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/(legal|notlegal)\.html$
 RewriteRule . /index.html [QSA,L]

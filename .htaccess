@@ -1,6 +1,12 @@
 
 Options -MultiViews
 RewriteEngine On
+
+# Allow specific HTML files to be served directly
+RewriteCond %{REQUEST_URI} ^/(legal|notlegal)\.html$
+RewriteRule ^(.*)$ /$1 [L]
+
+# For all other requests, redirect to index.html for React routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [QSA,L]
